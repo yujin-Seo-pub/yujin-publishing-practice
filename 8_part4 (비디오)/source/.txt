@@ -1,0 +1,44 @@
+--- 제이쿼리 --- 
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+--- 폰트어썸 ---
+
+https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+https://codepen.io/mosbth/pen/qBEeJpg
+
+--- 소셜 칼라 ---
+
+social color
+
+--- 폰트 3가지 ---
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+font-family: "Montserrat", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+font-family: "Monoton", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+font-family: "Raleway", sans-serif;
+
+--- 무료동영상 ---
+픽사베이 무료동영상 검색 = 놀라운 무료동영상
+https://pixabay.com/ko/images/search/%EC%98%81%EC%83%81/
+
+Wave Ocean
+The World's Ocean
+The Atlantic Ocean is situated between the Americas and European/African continents. Atlantic Ocean is the second largest and saltiest ocean in the world. It resembles an S-shape between the Americas, Europe and Africa. “Atlantic” originated from the Greek god “Atlas” who carried the sky for eternity.
+
+Book Now Learn More
+Anniversary
+60
+
+Attractions
+Hotels & Spa
+Shop & Dine
+Celebrate
+Promotions
