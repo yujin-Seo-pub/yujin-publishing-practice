@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- UIkit CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/js/uikit.min.js"></script>
+
+  <style>
+    .uk-accordion {
+      width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+    }
+  </style>
+</head>
+<body>
+  
+  <ul uk-accordion="multiple: true; duration: 500; animation: true;">
+    <li class="uk-open">
+      <a class="uk-accordion-title" href>Item 1</a>
+      <div class="uk-accordion-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem, aliquid illum, quam corrupti labore, reiciendis sapiente nobis optio ipsum quod expedita minima. Fuga, enim? Illo porro sequi et perspiciatis!
+        </p>
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title" href>Item 2</a>
+      <div class="uk-accordion-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod assumenda ipsam deserunt saepe. Corrupti rem sed temporibus consequatur veritatis.
+        </p>
+      </div>
+    </li>
+    <li>
+      <a class="uk-accordion-title" href>Item 3</a>
+      <div class="uk-accordion-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ex animi eos voluptatum sit nostrum modi labore excepturi mollitia minima accusamus magni. Autem, distinctio recusandae iure officia delectus exercitationem molestias nesciunt maxime, voluptates, sequi illo consectetur explicabo impedit numquam. Ut explicabo natus vitae aliquam! Beatae distinctio delectus quisquam, totam voluptatem eligendi obcaecati eveniet corrupti necessitatibus accusantium. Animi soluta eius inventore?
+        </p>
+      </div>
+    </li>
+</ul>
+
+</body>
+</html>
