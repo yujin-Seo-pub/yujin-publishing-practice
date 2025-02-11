@@ -1,0 +1,55 @@
+body {
+  line-height: 1.5em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #DCE358, #45B649);
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.gnb {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+}
+.gnb a{
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.gnb a:before,
+.gnb a:after {
+  position: absolute;
+  content: attr(data-link);
+  width: 100%;
+  transition: 0.3s;
+}
+.gnb a:before {
+  top: 0;
+  left: 0;
+}
+.gnb a:after {
+  top: 100%;
+  left: 0;
+  color: #45B649;
+}
+.gnb a:hover:before {
+  top: -100%;
+  left: 0;
+}.gnb a:hover:after {
+  top: 0;
+  left: 0;
+}
+
+속성 = property = attribute

@@ -1,0 +1,55 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  /* border: 1px solid red; */
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.item input[type=text],
+.item input[type=email],
+.item input[type=tel] {
+  border: 1px solid lightgrey;
+  height: 40px;
+  width: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  outline: none;
+  transition: 0.3s;
+}
+.item .fa {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: gray;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  line-height: 40px;
+  transition: 0.3s;
+}
+.item input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+.item input:focus + .fa {
+  color: dodgerblue;
+}
+.item input:focus::placeholder {
+  visibility: hidden;
+}

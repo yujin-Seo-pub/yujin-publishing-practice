@@ -1,0 +1,36 @@
+body {
+  color: black;
+  line-height: 1.5em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.dropdown {
+  width: 200px;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 5px;
+  font-size: 18px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.dropdown-submenu {
+  display: none;
+  width: inherit;
+}
+.dropdown-submenu a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+.dropdown-submenu a:hover {
+  color: #eee;
+}
+.dropdown:hover .dropdown-submenu {
+  display: block;
+}
