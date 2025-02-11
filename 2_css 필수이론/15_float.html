@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가로 배치하기(float, overflow, clear, inline-block)</title>
+  <link rel="stylesheet" href="15_style.css">
+</head>
+<body>
+  
+  <h1>< 속성 float pdf 51p ></h1>
+  <h2>★ float : 뜨다, 떠다니다, 부유하다</h2>
+  <h2>★ float: left / float: right 는 인라인요소 블록요소 둘다 적용됨</h2>
+  <h2>★ margin: auto(중앙 정렬) 는 블럭요소만 적용됨 (인라인요소X)</h2> 
+  <h2>---> 인라인요소는 display : block으로 바꿔줘야 margin: auto(중앙 정렬)가능</h2>
+  <h2>---> 꼭 인라인요소나 display : inline-block을 사용해야할때는 자식요소에 margin: auto 사용하지말고 부모요소에 text-align: center 사용</h2>
+  <mark>
+    ♥중요♥인라인요소를 중앙으로 보낼때는 부모요소에 text-align: center을 주고<br>
+    블록요소를 중앙으로 보낼때는 자기자신에 margin: auto 준다.
+  </mark>
+
+  <h2>★ HTML 요소가 왼쪽에 있다고 float: left가 기본값 아니고 </h2>
+  <h2>---> 기본값은 float: none 이다. </h2>
+  <h2>★ 자식요소에 float 속성이 사용되면 부모요소는 자식요소가 없다고 판단해 높이값을 잃는다.</h2>
+  <h2>---> 그래서 자동으로 자식요소만큼 부모높이값 맞춰주기 위해  overflow: hidden 부모요소에 적용 (부모요소에 height 값 줘도 되는데 자식요소에 따라 계속 바꿔줘야됨)</h2>
+
+  <mark>자식요소가 블록(div)요소일때 연습</mark> <br><br>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+  <br><br>
+
+  <mark>자식요소가 인라인(span)요소일때 연습</mark> <br><br>
+
+  <div class="parentt">
+    <span class="childd"></span>
+  </div>
+
+</body>
+</html>

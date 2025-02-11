@@ -1,0 +1,54 @@
+/* .parent {
+  position: relative;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.child1 {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+}
+.child2 {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+}
+.child3 {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+}
+.child4 {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+} 첫번째꺼 연습 */
+.parent {
+  position: relative;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+.child {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

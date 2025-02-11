@@ -1,0 +1,15 @@
+body {
+  color: black;
+}
+a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  /* display: inline-block; 블럭요소는 가로배치 안되서 인라인요소도 사용해야할때 */
+  display: block; 블럭요소로 바꾸고 싶을때
+  margin: 5px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+}

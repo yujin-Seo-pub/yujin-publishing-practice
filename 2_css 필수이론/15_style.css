@@ -1,0 +1,25 @@
+.parent {
+  border: 5px solid red;
+  width: 600px;
+  overflow: hidden;
+}
+.child {
+  background-color: gold;
+  width: 200px;
+  height: 200px;
+  /* float: left; */
+  float: right;
+}
+.parentt {
+  border: 5px solid red;
+  width: 600px;
+  /* overflow: hidden; */
+}
+.childd {
+  background-color: gold;
+  width: 200px;
+  height: 200px;
+  /* float: left; */
+  display: block;
+  margin: auto;
+}

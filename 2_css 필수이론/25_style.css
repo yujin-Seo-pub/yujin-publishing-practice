@@ -1,0 +1,33 @@
+.tab-inner {
+  width: 400px;
+}
+.btn span {
+  background-color: #ddd;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-right: -7px;
+}
+.btn span:first-child {
+  background-color: white;
+}
+.btn span:last-child {
+  background-color: gray;
+}
+.tab {
+  border: 1px solid black;
+}
+.tab a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin: 5px;
+  border-bottom: 1px solid black;
+}
+.tab a:last-child {
+  border-bottom: none;
+}

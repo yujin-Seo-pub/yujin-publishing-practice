@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS박스모델-width, heilght, padding, margin</title>
+  <link rel="stylesheet" href="11_style.css">
+</head>
+<body>
+
+  <h1> < margin, padding > </h1>
+
+  1. 4곳 모두 동일한 값 사용 <br>
+  ex) margin: 30px <br>
+  ex) padding: 30px <br><br>
+
+  2. 2곳 동일한 값 사용 (상하/좌우) <br>
+  ex) margin: 30px 5px <br>
+  ex) padding: 30px 5px <br><br> 
+
+  3. 4곳 다 다른값 사용 <br>
+  ex) margin: 10px 20px 30px 40px <br>
+  ex) padding: 10px 20px 30px 40px <br>
+  ______________(상)__(우)__(하)__(좌) <br><br>
+
+  <mark>margin, padding 연습</mark> <br><br>    
+  <div class="box">box</div>
+  <h1 class="heading">박스모델</h1> <br><br>
+
+  <h1>< box-sizing: border-box > pdf 44p 그림참고 </h1> 
+
+  보더 크기는 padding과 border size를 주게되면 처음 정했던 width, height 값에 더해져서 커지게 되는데 <br><br>
+
+  box-sizing: border-box를 사용하면 padding과 border size를 주게되도 처음 정했던 width, height 값안에 포함되게 된다. <br><br>
+
+  .box{ <br>
+    width: 600px; <br>
+    height: 50px; <br>
+    padding: 20px; <br>
+    border: 10px solid red; <br>
+  } <br><br>
+
+  width 600인데 양쪽 padding (20+20) 과 양쪽 border size (10+10) 총 660 이 되버린다 <br><br>
+
+  그러나 box-sizing: border-box 사용하면 width 값 600 안에 padding 40과 border 20 포함되서 총 600 으로 보여진다. <br><br>
+
+  <mark>box-sizing: border-box 연습-1-</mark> <br><br> 
+  <div class="boxx">Box Content</div> <br><br>
+
+  <mark>box-sizing: border-box 연습-2-</mark> <br><br>
+  <div class="borderbox">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+</body>
+</html>

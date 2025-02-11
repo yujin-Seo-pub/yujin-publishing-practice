@@ -1,0 +1,14 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 15px;
+}
+a{
+  color: #333;
+  text-decoration: none;
+  transition: 2s;
+}
+a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>포지셔닝(2) CSS 자동으로 수평 수직 중앙 위치시키기</title>
+  <link rel="stylesheet" href="20_style.css">
+</head>
+<body>
+
+  <h1>< 포지셔닝 pdf 64p ></h1>
+  <h2>★ 부모요소 position: relative </h2>
+  <h2>★ 자식요소 position: absolute </h2>
+  <h2>자식 움직일때는 부모요소 position: relative 자식요소 position: absolute 써주고 left right top bottom 쓰고 움직이면된다.</h2>
+  <h2>★ left right top bottom 좌표속성과 z-index 속성은 position과 반드시 함께 사용해야한다. </h2>
+  <h2>(포지션속성이 무조건 있어야 좌표 관련 속성 사용가능)</h2>
+  <h2>★ 자식요소에 float 속성이 사용되면 부모요소는 자식요소가 없다고 판단해 높이값을 잃는것처럼 </h2> 
+  <h2>position: absolute도 자식요소에 사용되면 부모요소는 자식요소가 없다고 판단해 높이값을 잃는다 -> 그래서 부모요소에 꼭 높이값 줘야한다</h2>
+  <h2>★ position: absolute주면 인라인요소던 블록요소던 인라인블록요소로 바뀐다</h2>
+★
+  <h1>< 브라우저 크기에 관계없이 항상 수직 수평 중앙 정렬하기 ></h1>
+  <h2>↓ 외우기</h2>
+  <h2>position: absolute</h2>  
+  <h2>top: 50%;</h2>  
+  <h2>left: 50%;</h2>  
+  <h2>transform: translate(-50%,-50%);</h2>  <br>
+
+  <!-- <mark>첫번째 연습</mark> <br><br>
+  
+  <div class="parent">
+    <div class="child1">11111</div>
+    <div class="child2">22222</div>
+    <div class="child3">33333</div>
+    <div class="child4">44444</div>  -->
+
+  <mark>두번째 연습</mark> <br><br>
+  
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+</body>
+</html>

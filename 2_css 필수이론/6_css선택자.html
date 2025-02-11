@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>css 선택자, 우선순위</title>
+  <link rel="stylesheet" href="6_style.css">
+</head>
+<body>
+
+  <h1>[선택자 종류]</h1>
+  1.태그 선택자 (ex : p) <br>
+  2.클래스 선택자 (.) <br>
+  3.아이디 선택자 (#) <br>
+  4.태그와 함께 쓰는 선택자 (ex : p.) <br><br>
+
+  <h1>[그룹 선택자]</h1>
+  1.그룹선택자 - css속성이 같은 경우 ,로 묶어서 (ex : h1, p {})<br>
+  2.하위선택자 - 자식, 손자요소 선택할때 띄어쓰기 (ex : p span {}) <br>
+  3.전체선택자 (*) <br>
+  4.css주석 /* 주석내용 */ <br><br>
+
+  <h1>[css적용 우선순위]</h1> <br>
+  1.!important - css에 !important 쓰면 제일 우선순위로 적용됨<br>
+  2.인라인 - 태그에 직접 css <br>
+  3.아이디 <br>
+  4.클래스 <br>
+  5.태그 <br><br>
+
+  <mark>[선택자종류 연습]</mark>
+  <p>기타 필요한 사항은 법률로 ...</p>
+  <p class="center">필요로 인하여 법률이 정하는 경...</p>
+  <p id="center">기타 필요한 사항은 법률...</p>
+  <div class="center">특별한 규정이 없는 한 재적의원 과반...</div> <br><br>
+
+  <mark>[그룹선택자 연습]</mark>
+  <h2>천지는 광야에서 물방아 황금시대를 것이다</h2>
+  <h3>유소년에게서 이것은 방황하여도<b>굵은글씨</b></h3> <br><br>
+
+  <mark>[css적용 우선순위]</mark>
+  <h1>css 적용우선순위 - 태그</h1>
+  <h1 class="text">css 적용우선순위 - 클래스</h1>
+  <h1 id="text">css 적용우선순위 - 아이디</h1>
+  <h1 style="color: gold;">css 적용우선순위 - 인라인</h1>
+  <h1>css 적용우선순위 - !important</h1>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* section {
+  border: 5px solid black;
+  width: 600px;
+  overflow: hidden;
+}
+section article {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 100px;
+  float: left;
+  border: 1px solid blue;
+  box-sizing: border-box; float와 overflow를 사용해 배치 연습
+} */
+
+section {
+  border: 5px solid black;
+  text-align: center;
+}
+section article {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 100px;
+  border: 1px solid blue;
+  display: inline-block;
+}

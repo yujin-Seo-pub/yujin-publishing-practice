@@ -1,0 +1,41 @@
+div{
+  background-color: #ccc;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 5px;
+  float: left; 
+}
+.box1{
+  /* box-shadow: x축이동거리 y축이동거리 퍼짐정도 색상; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.445);
+}
+.box2{
+  box-shadow: 0 0 20px rgba(30, 143, 255, 0.534);
+}
+.box3{
+  box-shadow: 10px 10px 0 blue;
+}
+.box4{
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.548);
+}
+.box5{
+  box-shadow: inset 0 0 20px white;
+}
+.box6{
+  box-shadow: inset 0 0 100px black;
+}
+.heading{
+  background-color: #333;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: gold;
+  text-shadow: 5px 5px 10px white;
+}
+.headingg{
+  background-color: #333;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: gold;
+  text-shadow: 5px 5px 0 blue, 8px 8px 0 darkcyan;
+}
