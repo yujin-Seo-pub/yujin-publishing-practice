@@ -1,0 +1,52 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import url(http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.html-accordion {
+  width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.html-accordion h1 {
+  margin-top: 0;
+  text-align: center;
+}
+details {
+  padding: 0.5em 1em;
+}
+details summary {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+details[open] summary {
+  font-weight: bold;
+}
+details summary:after {
+  content: '\e942';
+  font-family: xeicon;
+  float: right;
+}
+details[open] summary:after {
+  transform: rotateX(180deg);
+}
+.details-content {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+.details-content p {
+  margin: 0;
+}

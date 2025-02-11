@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+.faq {
+  background-color: #ffe55e;
+  height: 100vh;
+}
+.faq-inner {
+  /* border: 1px solid red; */
+  width: 750px;
+  margin: auto;
+}
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+}
+.accordion {}
+.item {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.219);
+  margin-bottom: 17px;
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  /* padding-bottom: 20px; */
+  cursor: pointer;
+}
+.title.active {
+  padding-bottom: 20px;
+}
+.title:before {
+  content: '\f107';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  font-size: 30px;
+  font-weight: 100;
+}
+.title.active:before {
+  transform: rotate(180deg);
+}
+.content {
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  line-height: 25px;
+  color: #333;
+  display: none;
+}
+.content.active {
+  display: block;
+}
+.content em {
+  font-style: normal;
+  font-weight: bold;
+  color: #444;
+}

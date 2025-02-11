@@ -1,0 +1,130 @@
+/* ■ 해당 예제를 만들면서 배우게 되는 내용
+
+1) 플렉스(Flex) 배치
+2) CSS 함수 : calc
+3) 폼 요소 중 input에 관련한 가상클래스(:focus, ::placeholder) 및 속성선택자
+4) 제이쿼리(jQuery) 메서드 : addClass, removeClass, css, focus, blur
+5) CSS Easing
+6) XEicon 가상클래스 :before, :after 사용법 */
+@import url(http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+header {
+  height: 80px;
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  width: 1280px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {}
+.logo img {
+  height: 40px;
+}
+.search {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+section {
+  background-color: white;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+/* Modal */
+.modal-search {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -300px;
+  transition: 0.3s;
+}.modal-search.active {
+  top: 0;
+}
+.close-search {
+  color: #777;
+  font-size: 2em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.sch {
+  /* border: 1px solid red; */
+  width: 500px;
+}
+.sch .field {
+  /* border: 1px solid blue; */
+  display: flex;
+  position: relative;
+}
+.sch .field:before {
+  content: '\e97a';
+  font-family: xeicon;
+  position: absolute;
+  color: #333;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+}
+.field input[type=search],
+.field input[type=button] {
+  padding: 15px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+.field input[type=search] {
+  flex: 5;
+  padding-left: 50px;
+}
+.field input[type=button] {
+  background-color: crimson;
+  color: white;
+  flex: 1;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.field input[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+.field input[type=button]:hover {
+  opacity: 1;
+}
+.field input[type=search]::placeholder {
+  font-style: italic;
+  transition: 0.3s;
+}
+.field input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+.hash-tag {
+  font-size: 15px;
+  color: gold;
+  display: none;
+}
