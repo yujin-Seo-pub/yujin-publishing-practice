@@ -1,0 +1,46 @@
+■인라인요소
+- 크기값을 지정못함
+- 한줄에 여러개 배치
+- 상하마진 못가짐
+- 기본 너비값은 컨텐츠의 너비값
+- span, a, small, em, b, br, audio, video, s, u, mark, q, strong, sup, sub, i, big, del, label
+​
+■블록요소
+- 크기값을 지정할 수 있음
+- 한줄에 한개만 배치
+- 상하좌우마진 모두 가짐
+- 기본 너비값은 100%
+- div, ul, ol, li, h, hr, form, dl, dt, dd, p, table, header, article, footer, section, nav, details, summury, center,
+​
+■인라인블록요소
+- 크기값을 지정할 수 있음
+- 한줄에 여러개 배치
+- 상하좌우마진 모두 가짐
+- 기본 너비값은 컨텐츠의 너비값
+- img, input, button, fontawesome icon
+​
+어떤 요소이건 position: absolute 또는 fixed가 적용되면 인라인블록으로 변함.
+​
+before after는 기본적으로 인라인요소
+
+  <h1>웹 퍼블리셔를 위한 크롬 확장프로그램</h1>
+
+  <h2>크롬 확장 프로그램이란?</h2>
+
+  <p>
+    확장 프로그램, 테마, 앱으로 데스크톱 컴퓨터에서  크롬을 맞춤설정합니다. 크롬에 새로운 기능 추가. 그롬에 확장 프로그램을 설치하여 새 기능을 추가할 수 있는 플러그인입니다.
+  </p>
+
+
+  <h3>1. Page Ruler Redux (대체 / Metric Spy)</h3> : 활성화된 브라우저 화면에서 측정하고싶은 요소를 드래그해서 너비와 높이를 알아내는 확장프로그램
+
+  <h3>2. gallerilfy powerful image (대체 / Image downloader - Imageye)</h3> : 활성화된 브라우저 화면에서 원하는 이미지를 다운로드할 수 있는 Image Downloader
+
+  <h3>3. CSViewer</h3> : 활성화된 브라우저 안에 요소의 CSS 보기& 복사 <br>
+    -> F - 고정 / C - css복사 / Esc - 빠져나오기
+    
+  <h3>4. ColorZilla</h3> : 활성화된 브라우저 화면에서 원하는 요소 색상값을 보거나 추출하거나 색상 관련 확장 프로그램 (색상추출, Color Picker, 색상분석, CSS 그라디언트 만들기 링크)
+
+  <h3>5. Mobile RWD Tester (대체 / 반응형 테스터)</h3> : 활성된 브라우저 화면을 모바일 기기에 따라 반응형 상태를 확인할 수 있는 반응형 웹사이트 제작시 활용되는 확장프로그램</h3>
+
+  <h3>6. Nimbus</h3> : 활성화된 브라우저 화면을 이미지 형태로 캡쳐하는 브라우저 화면 캡쳐 전문 프로그램. 부가기능으로서 브라우저 화면을 동영상으로 레코딩하는 기능도 있음.

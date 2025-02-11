@@ -1,0 +1,79 @@
+--- 제이쿼리 --- 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+--- 폰트어썸 ---
+
+https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+https://codepen.io/mosbth/pen/qBEeJpg
+
+--- xeicon ---
+
+http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css
+
+--- 플랫아이콘 ---
+
+--- 프리픽 아이콘콘---
+
+--- 칼라 ---
+
+Flat UI Color
+
+W3C Color Picker
+
+--- 웹 그라디언트 닷컴 ---
+
+https://webgradients.com/
+
+--- 그라디언트 만들어주는 ---
+
+https://www.grabient.com/
+
+--- 무료동영상 ---
+픽사베이 무료동영상 검색 = 놀라운 무료동영상
+https://pixabay.com/ko/images/search/%EC%98%81%EC%83%81/
+
+--- 한글입숨 ---
+한글 더미텍스트
+
+--- character entity reference chart (HTML에 바로 사용할수있는 기호) ---
+https://tools.w3cub.com/html-entities
+
+--- slick 슬라이더 ---
+https://kenwheeler.github.io/slick/
+
+--- bx 슬라이더 ---
+https://bxslider.com/
+
+--- swiper 슬라이더 ---
+https://swiper6.vercel.app/demos
+
+--- featherlight.js (풀스크린 모달) ---
+공식웹 - http://noelboss.github.io/featherlight
+구글검색 - featherlight.js
+
+<a href="http://www.example.com (띄우고 싶은 html)" data-featherlight="iframe">Open example.com in an iframe</a>
+
+중고급 이론팁 17번째 어바웃 참고
+
+--- wow.js (정적인 웹사이트에 과하지 않은 애니메이션) ---
+공식웹 - http://wowjs.uk/
+구글검색 - wow.js
+
+--- 프론트엔드 프레임웍 (uikit) ---
+공식웹 - http://getuikit.com/
+
+--- 테마포레스트 ---
+--- 지디앱 ---
+
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-google-plus"></i>
+<i class="fa fa-linkedin"></i>
+<i class="fa fa-instagram"></i>
+
+The Starry Night
+A Sunday afternoon on the Île de la Grande Jatte
+Des glaneuses
+
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
