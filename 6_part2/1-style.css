@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+.gnb {}
+.gnb a {
+  position: relative;
+  padding-bottom: 5PX;
+}
+/* .gnb a:before {
+  content: '';
+  position: absolute;
+  background-color: crimson;
+  width: 4PX;
+  height: 4px;
+  bottom: 0;
+  transition: 0.3s;
+  left: 0;
+}
+.gnb a:hover:before {
+  left: calc(100% - 4px);
+} */
+
+.gnb a:before {
+  content: '';
+  position: absolute;
+  background-color: crimson;
+  width: 0px;
+  height: 1px;
+  bottom: 0;
+  transition: 0.3s;
+  left: 50%;
+  transform: translate(-50%);
+}
+.gnb a:hover:before {
+  width: 100%;
+}

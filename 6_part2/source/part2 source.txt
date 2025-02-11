@@ -1,0 +1,39 @@
+--- 폰트어썸 ---
+
+https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.Class
+
+https://codepen.io/mosbth/pen/qBEeJpg
+
+5 - 체크박스 폰트어썸
+
+유니코드 \f00c
+
+HTML
+CSS
+jQuery
+UIKit
+
+6 - 개인프로필 카드
+
+Andrew Yu
+Developer
+
+Monica Jung
+Designer
+
+James Lee
+Planner
+
+7 -
+
+What are you looking for?
+
+8 -
+
+Email
+Email Address
+Password
+Password
+Keep me logged in
+Forgot Your Password?
+Log in
