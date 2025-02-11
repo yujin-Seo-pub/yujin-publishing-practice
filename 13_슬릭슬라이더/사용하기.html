@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick.js -->
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <script src="slick/slick.js"></script>
+
+    <!-- slick CDN
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+    <style>
+      body {
+        background-color: pink;
+      }
+      .myslider {
+        width: 800px;
+        margin: auto;
+      }
+      .myslider div {
+        border: 1px solid #000;
+        height: 300px; 
+        font-size: 30px;
+        background-color: #ddd;
+      }
+
+      @media (max-width: 768px) {
+        .myslider {
+          width: 100%;
+        }
+      }
+      /* 슬릭슬라이더 옆으로 버튼 없애기
+      .myslider .slick-arrow {
+        border: 1px solid black;
+        display: none !important;
+      }
+      슬릭슬라이더 도트 없애기
+      .myslider .slick-dots {
+        border: 1px solid red;
+        display: none !important;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="myslider">
+      <div>slide content #01</div>
+      <div>slide content #02</div>
+      <div>slide content #03</div>
+      <div>slide content #04</div>
+      <div>slide content #05</div>
+      <div>slide content #06</div>
+      <div>slide content #07</div>
+      <div>slide content #08</div>
+      <div>slide content #09</div>
+    </div>
+
+    <script>
+      $('.myslider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
+  </body>
+</html>
