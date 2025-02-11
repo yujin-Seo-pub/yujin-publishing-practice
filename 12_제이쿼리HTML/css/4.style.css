@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: black;
+  background-color: #ddd;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+div {
+  background-color: dodgerblue;
+  width: 340px;
+  height: 340px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+  line-height: 340px;
+  display: none;
+}

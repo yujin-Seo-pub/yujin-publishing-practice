@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: black;
+  background-color: #ebebeb;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+}
+div {
+  background-color: dodgerblue;
+  width: 230px;
+  height: 200px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  display: none;
+}
