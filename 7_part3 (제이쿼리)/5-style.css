@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section {
+  width: 800px;
+}
+.tab-inner {
+  margin-top: 30px;
+}
+.btn {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  margin-left: 10px;
+}
+.btn li {
+  float: left;
+  width: 120px;
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #eee;
+  border-right: 1px solid #ddd;
+  border-top: 2px solid transparent;
+}
+.btn li:last-child {
+  width: 170px;
+  border-right: none;
+}
+.btn li:hover,
+.btn li.active {
+  border-top: 2px solid crimson;
+  background-color: white;
+}
+.tabs {}
+.tabs div {
+  /* border: 1px solid black; */
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+.tabs div.active {
+  display: block;
+}
+
+/* Tad Content */
+.tabs div h2 {
+  text-align: center;
+}
+.tabs div img {
+  float: left;
+  margin-right: 20px;
+}
+.tabs div p {
+  overflow: hidden;
+}
+
+/* Heading */
+.heading {}
+.heading h1 {
+  font-size: 27px;
+}
+.heading h1 span {
+  color: crimson;
+}
+.heading input[type=text] {
+  background-color: white;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: #fff url(image/search-icon.png) no-repeat center left 5px;
+  background-size: 23px;
+  padding-left: 35px;
+}
+.heading input[type=text]::placeholder {
+  opacity: 1;
+  transition: 0.3s;
+  font-style: italic;
+}
+.heading input[type=text]:focus::placeholder {
+  /* display: none; 이거로는 플레이스홀더 없앨수 없음
+  visibility: hidden; 이 두개는 트랜지션 못줌 */
+  opacity: 0;
+}

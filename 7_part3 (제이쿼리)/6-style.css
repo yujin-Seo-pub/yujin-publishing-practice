@@ -1,0 +1,46 @@
+body {
+  /* background-color: black; */
+  margin: 0;
+}
+.navi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.navi li {}
+.navi li a {
+  font-size: 4em;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.navi li a:before {
+  content: attr(data-text);
+  position: absolute;
+  color: yellowgreen;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.navi li a:hover:before {
+  width: 100%;
+}
+.photo {
+  background: url(image/portrait-initial.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}

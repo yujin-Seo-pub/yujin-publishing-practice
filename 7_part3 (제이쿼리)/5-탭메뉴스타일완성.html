@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="5-style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <section>
+    <div class="heading">
+      <h1><span>코딩웍스</span>, 프론트엔드 퍼블리셔 취업을 위한 실전 퍼블리싱 강좌</h1>
+      <input type="text" placeholder="What are you looking for?">
+    </div>
+    <div class="tab-inner">
+      <ul class="btn">
+        <li data-alt="tab1" class="active">HTML5</li>
+        <li data-alt="tab2">CSS3</li>
+        <li data-alt="tab3">JQUERY</li>
+        <li data-alt="tab4">JAVASCRIPT</li>
+        <li data-alt="tab5">CSS FRAMEWORKS</li>
+      </ul>
+      <div class="tabs">
+        <div id="tab1" class="active">
+          <h2>HTML5</h2>
+          <img src="image/platform-logo-01.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, eius atque recusandae voluptatibus eaque odio? Saepe praesentium temporibus sapiente voluptatibus, sit autem doloremque laboriosam adipisci ipsa, ullam unde corrupti aliquid eligendi, officia incidunt id iusto dolorem voluptas atque dolor facilis sunt! Nam earum, praesentium voluptas ipsa ea fuga repellat asperiores reiciendis animi eaque doloremque exercitationem tenetur possimus? Laudantium ratione molestiae odio dolorum accusamus aperiam illum, amet iure maxime. Sint aperiam placeat, debitis a officiis ut quasi laboriosam, perferendis eaque sed totam ea quae facilis soluta. Eveniet nisi eius quidem autem voluptate iusto! Ipsum soluta assumenda explicabo, pariatur quas necessitatibus atque!
+          </p>
+        </div>
+        <div id="tab2">
+          <h2>CSS3</h2>
+          <img src="image/platform-logo-02.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in asperiores repellendus quasi iste molestiae accusamus unde possimus adipisci? Facilis rem autem enim deleniti, aut et sunt dicta est alias consequatur architecto, dolor veritatis! Laborum sapiente nam dolores, voluptas quidem ex veniam consectetur maiores quod recusandae iure dicta blanditiis, odio quasi sed tempora exercitationem! Ab vitae exercitationem ducimus pariatur. Voluptatum earum ipsam architecto tempora voluptatibus quas? Sequi harum cum suscipit tempore non beatae tempora alias. Repellendus accusamus eligendi a perspiciatis iste? Autem nesciunt officia laborum dolorem neque cum perspiciatis quisquam illo consequuntur, tempora amet suscipit possimus voluptatem similique ex unde.
+          </p>
+        </div>
+        <div id="tab3">
+          <h2>JQUERY</h2>
+          <img src="image/platform-logo-03.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugit facere repellendus placeat quo ducimus aliquid sunt numquam blanditiis eos itaque quia, voluptatum et cupiditate voluptatem eius officia dicta magni id temporibus illum laudantium! Iure earum quasi debitis. Similique fuga deleniti porro omnis perspiciatis sed perferendis. Beatae harum sequi consequuntur eos nisi ab quas expedita accusamus cumque sunt impedit molestiae ducimus dolorem a temporibus odit repellat, reprehenderit nihil, laborum, quia nam odio? Accusantium facilis labore reprehenderit mollitia nesciunt? Doloremque perferendis obcaecati nemo corporis voluptate itaque eos quisquam officia natus veniam consequatur ducimus atque necessitatibus ut eius quam in, non maiores.
+          </p>
+        </div>
+        <div id="tab4">
+          <h2>JAVASCRIPT</h2>
+          <img src="image/platform-logo-04.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea impedit dolor sit iusto ipsum non amet cumque quibusdam debitis facilis ad voluptatem repellendus expedita fugit recusandae voluptates eum nihil, laudantium necessitatibus error accusantium odio reprehenderit odit! Ex totam earum voluptatem rerum, reprehenderit dolor quibusdam minus magni molestias asperiores ipsa nemo numquam nam temporibus. Aperiam esse facere, sint nihil nostrum dolor dolorum cupiditate atque, pariatur reiciendis quos porro delectus. Perspiciatis eos, accusantium reprehenderit blanditiis praesentium distinctio amet perferendis atque similique nihil sequi deserunt itaque quisquam consequatur ut sunt suscipit fugit nesciunt, delectus ipsum mollitia nemo, laboriosam cumque eum! Corrupti, deleniti dignissimos.
+          </p>
+        </div>
+        <div id="tab5">
+          <h2>CSS FRAMEWORKS</h2>
+          <img src="image/platform-logo-05.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est neque accusamus optio quaerat iste, tenetur aspernatur officiis non reiciendis earum perferendis nulla praesentium ad fugiat nemo! Placeat saepe illum aspernatur fugit tempore culpa neque eius laborum aliquid doloribus debitis numquam reiciendis recusandae quis id totam blanditiis facere illo, nam velit ipsa quaerat! Eaque id ut deleniti nulla molestias nostrum atque? Amet veniam fugit fuga quidem. Asperiores illum eligendi libero aliquid corrupti repellendus placeat facere eum porro! Similique ut nostrum sequi optio veniam. Numquam repellendus neque, aperiam deleniti adipisci porro repudiandae labore quos quia maiores officia natus, iure blanditiis reprehenderit!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      var result = $(this).attr('data-alt')
+      $('.tabs div').removeClass('active')
+      $('#' + result).addClass('active')
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.star-rating {
+  background-color: black;
+  width: 280px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+.star-rating div {
+  float: left;
+  width: 50%;
+}
+.stars {
+  color: #333;
+}
+.stars .fa {
+  font-size: 21px;
+  cursor: pointer;
+}
+.stars .fa.active {
+  color: gold;
+  text-shadow: 0 0 5px gold;
+}
+.print {
+  color: white;
+  font-size: 15px;
+}
+.print img {
+  vertical-align: middle;
+  margin-right: 5px;
+}

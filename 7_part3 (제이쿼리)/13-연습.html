@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="13-style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="testmonial-section">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="testmonial-pic">
+      <img class="active" src="image/face-01.jpg" data-alt="tab1">
+      <img src="image/face-02.jpg" data-alt="tab2">
+      <img src="image/face-03.jpg" data-alt="tab3">
+      <img src="image/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testmonial">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae illo voluptatem maiores, quaerat, expedita deleniti veniam rem labore mollitia laboriosam dicta facere sint dolores eligendi! Perferendis quos qui dolor itaque. Atque aperiam sequi consequatur exercitationem sint porro, aut quaerat ea perspiciatis voluptate id autem minus tempora magni, molestias quo ut, quidem vitae similique culpa ullam obcaecati laudantium. Modi a consectetur quo odio. Ad, molestias. Commodi recusandae animi sed velit facere?
+        </p>
+        <p>Sally, Web Desginer</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident officia aliquid id? Beatae ratione, vero accusantium possimus blanditiis laboriosam doloribus? Repudiandae aliquid alias quas est placeat soluta debitis, nisi, eius commodi eos deleniti a fugiat dolorum inventore recusandae provident porro tempore quasi quidem non officiis? Error fugit eum enim quod qui, cupiditate laudantium odio. Debitis dolorem esse doloribus quia nemo adipisci, vero alias, exercitationem eius, mollitia dolorum. Itaque, eum temporibus.
+        </p>
+        <p>Amy, Graphic Designer</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis sequi aliquid, facilis voluptatum reiciendis perferendis voluptate perspiciatis ullam vero et magni hic accusantium excepturi at tempore consequuntur fugit enim eveniet culpa sapiente ea error. Vitae error ab tempore praesentium? Qui cupiditate iste voluptas iusto culpa modi porro quam. Labore aspernatur saepe repudiandae a illum repellat officia, nostrum, soluta in corrupti impedit dolor totam, incidunt quaerat voluptatum temporibus vitae non?
+        </p>
+        <p>Jung Ho, Developer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nisi velit ut odit architecto beatae tenetur veniam dolore quasi nesciunt maxime reiciendis quis placeat, quibusdam doloribus accusantium at cum! Laboriosam, non, quisquam rem odit voluptatum nobis temporibus dolores sapiente doloribus deserunt iusto nostrum inventore itaque quaerat neque pariatur ea reiciendis repellat et animi libero. Nobis nulla delectus quia, porro tenetur harum magni debitis optio laborum obcaecati, minus dolores explicabo. Quasi?
+        </p>
+        <p>Chris, Printing Desinger</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testmonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      $('.testmonial .content').removeClass('active')
+      $('#' + $(this).attr('data-alt')).addClass('active')
+    })
+  </script>
+
+</body>
+</html>

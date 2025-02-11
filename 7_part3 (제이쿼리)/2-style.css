@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+.container h1{
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.container h1 span {
+  color: crimson;
+}
+.login {
+  border: 1px solid black;
+  padding: 30px;
+}
+.login input[type=text],
+.login button {
+  padding: 10px;
+  outline: none;
+}
+.login button {
+  border: none;
+  cursor: pointer;
+}

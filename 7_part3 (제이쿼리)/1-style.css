@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  line-height: 1.5em;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.testmonial-section {
+  width: 800px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.123);
+  border-radius: 10px;
+}
+.testmonial-section h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.testmonial-section h1 span {
+  color: crimson;
+}
+.testmonial-pic {}
+.testmonial-pic img {
+  width: 100px;
+  margin: 10px;
+  filter: grayscale(1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.testmonial-pic img.active {
+  filter: grayscale(0);
+  /* filter: none; */
+  border-radius: 50%;
+}
+.testmonial {}
+.testmonial .content.active {
+  display: block;
+}
+.testmonial .content {
+  display: none;
+}
+.testmonial .content p:nth-child(2) {
+  font-weight: bold;
+}
