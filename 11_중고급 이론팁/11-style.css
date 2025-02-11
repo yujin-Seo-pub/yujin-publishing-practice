@@ -1,0 +1,43 @@
+:root {
+  --primary: royalblue;
+  --secondary: black;
+  --positive: yellowgreen;
+  --negative: crimson;
+  --big: 50px;
+  --medium: 30px;
+  --small: 16px;
+}
+
+/* :root 변수를 모아두는곳 */
+/* --aaa 변수선언할때 --사용 */
+/* 변수사용할땐 var(aaa) 이렇게 사용 */
+
+.btn {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn.primary {
+  background-color: var(--primary);
+}
+.btn.secondary {
+  background-color: var(--secondary);
+}
+.btn.positive {
+  background-color: var(--positive);
+}
+.btn.negative {
+  background-color: var(--negative);
+}
+
+.container h1 {
+  font-size: var(--big);
+}
+.container h3 {
+  font-size: var(--medium);
+}
+.container p {
+  font-size: var(--small);
+}

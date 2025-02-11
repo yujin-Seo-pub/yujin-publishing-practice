@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="16-style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="lnb-inner">LNB-inner</div>
+      <div class="gnb-inner">GNB-inner</div>
+    </header>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium mollitia officia provident sequi, sint modi expedita officiis et eos fuga consectetur ipsam tempora aperiam velit sunt ipsum voluptate quaerat ratione esse natus illo repellendus quia cupiditate! Aliquam rerum distinctio laborum ipsam aperiam temporibus sint alias? Magnam possimus recusandae est. Vitae error magni obcaecati asperiores, quos optio, ipsam corporis nesciunt delectus facilis doloremque impedit rem quibusdam architecto reiciendis recusandae? Numquam exercitationem optio ipsum delectus nesciunt rerum veritatis non aperiam fugiat, doloremque ullam nemo atque distinctio voluptatum magnam molestias cumque ab nisi id veniam sit. Voluptatem odit consequatur unde animi molestias voluptatum iure repellendus, eum minima voluptatibus laudantium illo. Quidem qui consequatur nihil atque, incidunt officia quod modi perferendis dicta voluptatem? Eveniet illo earum, laborum sit quis unde beatae dolorem obcaecati! Pariatur obcaecati voluptatum optio possimus natus, temporibus aliquid vel voluptatibus dicta ipsa voluptates modi illo veniam, ullam expedita atque fuga, dolorum reprehenderit tenetur sint totam. Iste voluptates reiciendis delectus sit vel, fugiat quo adipisci corrupti at, repellat tenetur voluptate animi perferendis exercitationem officia sed, quis alias facere in recusandae omnis quaerat deserunt neque mollitia. Consequatur ex quo provident iusto. Dolor impedit, quaerat repellat, beatae perspiciatis inventore, libero error consequuntur earum voluptates quo illum soluta quam accusamus autem voluptatum. Eaque, deleniti dolor soluta iusto unde fugiat animi hic impedit voluptatibus illum reprehenderit ducimus dolore rerum, minus, quas omnis repellat ad non? Unde iure doloremque pariatur voluptate laboriosam quis ex alias sapiente officiis fugit. Repudiandae quos aperiam excepturi odit a fuga odio soluta perferendis, laudantium assumenda? Velit sit deserunt esse nihil ipsa maxime cupiditate fugit ut alias veniam quaerat doloremque dolor, reprehenderit repellat quod et veritatis. Et amet in tempora hic dicta illo. Nemo commodi aut enim minus facilis hic voluptatem unde voluptatibus ipsam nulla id blanditiis quidem officia, alias magni placeat!
+      </p>
+    </section>
+  </div>
+  <a class="btn-top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+  <script>
+    /* Header Active CLass */
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active')
+      }
+      else {
+        $('header, .btn-top').removeClass('active')
+      }
+    })
+  </script>
+
+</body>
+</html>

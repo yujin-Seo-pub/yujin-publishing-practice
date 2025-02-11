@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .parent {
+      border: 8px solid black;
+      width: 400px;
+      height: 200px;
+      background-color: palevioletred;
+      color: white;
+    }
+    .child {
+      border: 8px solid red;
+      width: inherit; /* = 부모요소의 width: 400px; 상속받음*/
+      height: inherit; /* = 부모요소의 height: 200px; 상속받음*/
+      /* inherit 써주면 부모 크기가 늘어나도 같이 늘어나서 부모늘려주고 자식늘려주는 불필요 없애준다. */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">자식요소</div>
+  </div>
+</body>
+</html>

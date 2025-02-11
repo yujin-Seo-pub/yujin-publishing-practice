@@ -1,0 +1,104 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.lnb-inner,
+.gnb-inner {
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.lnb-inner {
+  background-color: black;
+  height: 40px;
+}
+.gnb-inner {
+  background-color: transparent;
+  height: 90px;
+}
+header.active .lnb-inner {
+  height: 0;
+  overflow: hidden;
+}
+header.active .gnb-inner {
+  background-color: #02397C;
+}
+nav {
+  width: 1280px;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.lnb-nav {
+  justify-content: right;
+  align-items: center;
+}
+.gnb-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 55px;
+}
+.photo {
+  height: 1000px;
+  background: url(image/snow-photo.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  color: white;
+  text-align: center;
+  width: 1000px;
+}
+.photo h1 {
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.photo em {
+  font-size: 20px;
+}
+section p {
+  font-size: 3em;
+  line-height: 2em;
+  color: #ddd;
+}
+.btn-top {
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+  font-size: 20px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  transform: translateY(100px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.btn-top.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.ddd {
+  color: #02397C;
+}

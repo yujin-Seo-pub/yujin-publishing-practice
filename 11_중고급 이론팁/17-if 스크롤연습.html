@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="17-style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <div class="lnb-inner">
+        <nav class="lnb-nav">
+          <a href="#none">for member</a>
+          <a href="#none">for clients</a>
+          <a href="#none">for inquire</a>
+        </nav>
+      </div>
+      <div class="gnb-inner">
+        <nav class="gnb-nav">
+          <div class="logo">
+            <img src="image/logo-favicon.png">
+          </div>
+          <div class="detail">
+            <a href="#home">HOME</a>
+            <a href="#a">ABOUT</a>
+            <a href="#none">RANKING</a>
+            <a href="#none">TESTIMONIAL</a>
+            <a href="#none">BLOC</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="photo" id="home">
+        <div class="content">
+          <h1>The World's Best Cities</h1>
+          <em>
+            It's not just about good weather or great food and nightlife. Unlike other best of lists, Resonance's annual ranking also considers a city's diversity
+          </em>
+        </div>
+      </div>
+        <h2 id="a">ABOUT</h2>
+        <a class="ddd" href="16-if 조건 스크롤.html" data-featherlight="iframe">Open example.com in an iframe(풀스크린모달)</a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat pariatur maxime sint optio quibusdam deserunt. Dolores laboriosam rem laborum recusandae doloremque labore quod quis obcaecati temporibus vel dolorum, perferendis magnam animi fugiat sunt placeat beatae expedita asperiores hic! Fugit vitae fugiat perspiciatis modi ad similique quisquam id corrupti voluptatem rerum. Magni culpa sit ad optio corporis ipsum libero deleniti dignissimos. Magni perspiciatis sit impedit, obcaecati minus temporibus tenetur possimus. Ad quidem quisquam, facilis sunt rem reiciendis debitis? Debitis ut iure voluptatibus iste nam sequi voluptas aliquid neque ab corrupti quaerat ipsum pariatur, quod, repellendus modi veniam reprehenderit voluptate! Nam quam in nihil eos laudantium modi doloremque amet praesentium expedita quas cumque, non libero aliquid quis fuga sunt ut quod sit, rerum vero enim qui aut consequuntur. Nihil officia temporibus quidem dicta officiis quaerat fugiat facilis soluta. Modi voluptas quas soluta maiores ea corrupti voluptatum iure, voluptatem cum earum eum fugit quidem. Perspiciatis vel libero exercitationem dolore vitae cumque, eos culpa facere ipsum doloremque. Nisi magnam adipisci dolorem dicta harum, esse voluptatibus temporibus sunt itaque dolores eius dolor facilis a. Consequuntur quidem pariatur cumque quam perspiciatis ipsam, odio fugiat, sunt, quasi eaque voluptatibus possimus omnis maxime accusantium illum. Sed praesentium repudiandae voluptatem ratione, assumenda ipsa quas quidem reiciendis dolores voluptates enim, ut ipsam eum maxime repellat? Libero cum accusantium veniam reiciendis quod officia eum, quis, expedita doloremque, ipsam dolor quam aut praesentium quibusdam nihil dolorum tenetur assumenda. Unde, autem rerum dolorum, accusantium reprehenderit ipsum quasi debitis tenetur quisquam dolores enim veritatis, repudiandae alias. Rerum quisquam praesentium laudantium perferendis eaque iure quidem odit ut quibusdam ullam? Labore aliquid nihil optio incidunt laudantium odio eaque a, doloremque quia recusandae amet id, sint culpa? Iusto vero nemo nisi, ipsum nostrum blanditiis incidunt? Id odio ea, quae maiores magni veniam repudiandae dolores voluptate aliquam!
+        </p>
+    </section>
+    <a class="btn-top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+
+  <script>
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 50) {
+        $('header, .btn-top').addClass('active')
+      }
+      else {
+        $('header, .btn-top').removeClass('active')
+      }
+    })
+  </script>
+
+</body>
+</html>
